@@ -1,4 +1,4 @@
-FROM grafana/grafana:6.3.7
+FROM alpine:3
 MAINTAINER doingbylearning
 
 ENV DUMB_INIT_VERSION 1.2.2
