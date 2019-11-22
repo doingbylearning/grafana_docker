@@ -1,2 +1,2 @@
-FROM grafana/grafana:v6.4.0-beta1
+FROM grafana/grafana:6.3.7
 MAINTAINER doingbylearning
