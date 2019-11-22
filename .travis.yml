@@ -1,0 +1,9 @@
+language: node_js
+node_js: 
+  - node
+
+service: 
+  - docker
+
+script:
+  - docker build -t doingbylearning/grafana_docker .
