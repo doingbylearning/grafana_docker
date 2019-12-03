@@ -11,7 +11,7 @@ RUN curl -L -o /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releas
 
 RUN mkdir /opt/grafana/ \
     && curl -L -o /opt/grafana/grafana-6.4.4.linux-amd64.tar.gz https://dl.grafana.com/oss/release/grafana-6.4.4.linux-amd64.tar.gz \
-    tar xvfz /opt/grafana/grafana-6.4.4.linux-amd64.tar.gz -C /opt/grafana \ 
+    && tar xvfz /opt/grafana/grafana-6.4.4.linux-amd64.tar.gz -C /opt/grafana \ 
     && rm /opt/grafana/grafana-6.4.4.linux-amd64.tar.gz
 
 ENTRYPOINT [ "/usr/local/bin/dumb-init", "--" ]
